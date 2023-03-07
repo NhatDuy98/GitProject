@@ -7,121 +7,125 @@
     <title>TableanhForm</title>
 </head>
 <body>
-    <caption>
-        <h2>General Admission Registration</h2>
-    </caption>
     <form action="">
         <table>
-            <td>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>Name</td>
-                            <td>
-                                <input type="text" placeholder="First Name">
-                            </td>
-                            <td>
-                                <input type="text" placeholder="Last Name">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td colspan="2">
-                                <input type="email" placeholder="sample@example.com">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Gender</td>
-                            <td>
-                                <input type="radio" name="gender"> Male
-                            </td>
-                            <td>
-                                <input type="radio" name="gender"> Female
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td colspan="2">
-                                <input type="tel">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">Emergency Contact</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="2">
-                                <input type="tel">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">Do you require parking?</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>
-                                <input type="radio" name="parking"> Yes
-                            </td>
-                            <td>
-                                <input type="radio" name="parking"> No
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">What is your room preference?</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="2">
-                                <input type="radio" name="room"> Single Room <br>
-                                <input type="radio" name="room"> Shared Room <br>
-                                <input type="radio" name="room"> No Room Needed
-                            </td>    
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td colspan="2">Do you have dietary restriction?</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="radio" name="dietary" checked> None <br>
-                                <input type="radio" name="dietary"> Vegetarian <br>
-                                <input type="radio" name="dietary"> Glutten Allergy <br>
-                                <input type="radio" name="dietary"> Lactose Allergy <br>
-                                <input type="radio" name="dietary"> Nut Allergy <br>
-                                <input type="radio" name="dietary"> Shelfish Allergy <br>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">What activies will you attend?</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="radio" name="activities" checked> Awards Gala Dinner <br>
-                                <input type="radio" name="activities"> Luncheon <br>
-                                <input type="radio" name="activities"> Town Hall <br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2" width="200px">Do you want to see the list of other attendees and their profiles on the official event app?</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="radio" name="profiles" checked> Yes
-                            </td>
-                            <td>
-                                <input type="radio" name="profiles"> No
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
+            <caption>
+                <h2>General Admission Registration</h2>
+            </caption>
+            <tbody>
+                <tr>
+                    <td align="top">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Name</td>
+                                    <td style="width: 70px;">
+                                        <input type="text" placeholder="First Name" style="width: 70px;">
+                                    </td>
+                                    <td style="width: 70px;">
+                                        <input type="text" placeholder="Last Name" style="width: 70px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td colspan="2">
+                                        <input type="email" placeholder="sample@example.com" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>
+                                        <input type="radio" name="gender"> Male
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="gender"> Female
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Phone</td>
+                                    <td colspan="2">
+                                        <input type="tel">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Emergency Contact</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="2">
+                                        <input type="tel">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">Do you require parking?</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="radio" name="parking"> Yes
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="parking"> No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">What is your room preference?</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="2">
+                                        <input type="radio" name="room"> Single Room <br>
+                                        <input type="radio" name="room"> Shared Room <br>
+                                        <input type="radio" name="room"> No Room Needed
+                                    </td>    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">Do you have dietary restriction?</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="radio" name="dietary" checked> None <br>
+                                        <input type="radio" name="dietary"> Vegetarian <br>
+                                        <input type="radio" name="dietary"> Glutten Allergy <br>
+                                        <input type="radio" name="dietary"> Lactose Allergy <br>
+                                        <input type="radio" name="dietary"> Nut Allergy <br>
+                                        <input type="radio" name="dietary"> Shelfish Allergy <br>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">What activies will you attend?</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="radio" name="activities" checked> Awards Gala Dinner <br>
+                                        <input type="radio" name="activities"> Luncheon <br>
+                                        <input type="radio" name="activities"> Town Hall <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" width="200px">Do you want to see the list of other attendees and their profiles on the official event app?</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="profiles" checked> Yes
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="profiles"> No
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </form>
 </body>
