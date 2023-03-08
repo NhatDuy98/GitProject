@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký học viên</title>
+</head>
+<body>
+    <form action="">
+        <table style="background-color: bisque;">
+            <thead style="background-color: aqua;">
+                <tr>
+                    <th colspan="2" align="left" style="color: blue;">ĐĂNG KÝ HỌC VIÊN</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color: blue;">Họ và tên</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Ngày sinh</td>
+                    <td><input type="datetime" name="birth"></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Giới tính</td>
+                    <td>
+                        <input type="radio" name="sex">Nam
+                        <input type="radio" name="sex">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Địa chỉ</td>
+                    <td><textarea name="address" id="" cols="25" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Lớp</td>
+                    <td>
+                        <select name="class" id="">
+                            <option value="class1">-Chọn lớp-</option>
+                            <option value="class2">-1A</option>
+                            <option value="class3">-1B-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Email</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td style="color: blue;">Điện thoại</td>
+                    <td><input type="tel" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" name="submit" value="Đăng ký">
+                        <input type="reset" name="reset" value="Nhập lại">  
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
