@@ -1,0 +1,8 @@
+thead {
+    background-color: brown;
+    color: aliceblue;
+}
+tbody td:hover {
+    background-color: aqua;
+    color: chocolate;
+}

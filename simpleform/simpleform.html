@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        .wufoo {
+            font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <Legend>
+                <h3>Order Form</h3>
+            </Legend>
+            What would you like to buy? <br>
+            <select name="ABC" id="">
+                <option value="A">A</option>
+                <option value="B">B (+ 0.5$)</option>
+                <option value="C">C (+ 0.5$)</option>
+            </select> <br>
+            How many would you like to order? <br>
+            <input type="radio" name="rd" id=""> 1 - 10$ <br>
+            <input type="radio" name="rd" id=""> 2 - 20$ <br>
+            <input type="radio" name="rd" id=""> 3 - 25$ <br>
+            Name <span style="color: red;">*</span> <br>
+            <input type="text" placeholder="First Name" size="15px" required>
+            <input type="text" placeholder="Last Name" size="15px" required><br>
+            Email <br>
+            <input type="email" name="Email" required><br>
+            Phone Number <br>
+            <input type="number" name="Number1" size="5px"> -
+            <input type="number" name="Number2" size="5px"> -
+            <input type="number" name="Number3" size="5px"> <br>
+            <button>Submit</button>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
