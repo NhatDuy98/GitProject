@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành Java Script</title>
+</head>
+<body>
+    <label for="">Password</label>
+    <input id="pw" type="password">
+    <button id="bt" onclick="changepassword()">Showpassword</button>
+
+    <script>
+        function changepassword(){
+            if(document.getElementById('pw').type=='password'){
+                document.getElementById('pw').type='text'
+                document.getElementById('bt').innerText='Hidepassword'
+            }
+            else{
+                document.getElementById('pw').type='password'
+                document.getElementById('bt').innerText='Showpassword'
+            }
+        }
+    </script>
+</body>
+</html>
