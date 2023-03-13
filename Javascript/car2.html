@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Car2</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <img id="car" src="up.png" alt="car">
+    </div>
+    <div style="text-align: center;">
+        <img onclick="keyup()" src="keyup.png" alt="keyup"><br>
+        <img onclick="keyleft()" src="keyleft.png" alt="keyleft">
+        <img onclick="keydown()" src="keydown.png" alt="keydown">
+        <img onclick="keyright()" src="keyright.png" alt="keyright">
+    </div>
+</body>
+<script>
+    const car2 = document.getElementById('car')
+    function keyright(){
+        car2.style.transform='rotate(90deg)'
+    }
+    function keyleft(){
+        car2.style.transform='rotate(-90deg)'
+    }
+    function keydown(){
+        car2.style.transform='rotate(180deg)'
+    }
+    function keyup(){
+        car2.style.transform='rotate(0deg)'
+    }
+</script>
+</html>
