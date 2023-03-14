@@ -1,5 +1,5 @@
 
-function showME(){
+function showMe(){
     alert('Xin chào');
 }
 function showMessage(){
@@ -10,4 +10,7 @@ function showMess(){
 }
 function showM(){
     console.log('Xin chào')
+}
+function hienMess(){
+    confirm('mother f?')
 }
