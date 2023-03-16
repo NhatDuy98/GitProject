@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điện</title>
+</head>
+<body>
+    <select name="" id="">
+        <option value="bt1">Bậc thang 1</option>
+        <option value="bt2">Bậc thang 2</option>
+        <option value="bt3">Bậc thang 3</option>
+        <option value="bt4">Bậc thang 4</option>
+        <option value="bt5">Bậc thang 5</option>
+        <option value="bt6">Bậc thang 6</option>
+    </select>
+    <select name="" id="">
+        <option value="0-50">0-50</option>
+        <option value="51-100">51-100</option>
+        <option value="101-200">101-200</option>
+        <option value="201-300">201-300</option>
+        <option value="301-400">301-400</option>
+        <option value="+400">Trên 400</option>
+    </select>
+    <p>
+        <label for=""><b>Nhập số điện</b></label>
+        <input id="numb" type="number">
+        <button onclick= check()>Check</button>
+    </p>
+    <p>
+        <label for=""><b>Số tiền cần trả là: </b></label>
+        <b id="kq"></b>
+    </p>
+    <script src="billelectric.js"></script>
+
+</body>
+</html>
