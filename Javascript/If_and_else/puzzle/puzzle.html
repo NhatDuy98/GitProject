@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game Puzzle</title>
+    <style>
+        table {
+            width: 500px;
+        }
+        table>tbody>tr>td>img {
+            width: 100%;
+            height: 100px;
+        }
+        table>tbody>tr>td>img:hover {
+            cursor: pointer;
+            box-shadow: 3px 3px 3px black;
+        }
+
+        .win {
+            box-shadow: 3px 3px 3px red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><img  id="img_1" onclick=clickimg(1) src="source/1.1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img  id="img_2" onclick=clickimg(2) src="source/2.1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img  id="img_3" onclick=clickimg(3) src="source/3.1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img  id="img_4" onclick=clickimg(4) src="source/4.1.jpg" alt=""></td>
+            </tr>
+            <tr>
+                <td><img  id="img_5" onclick=clickimg(5) src="source/5.1.jpg" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const win_1 = 'http://127.0.0.1:5500/source/1.3.jpghttp://127.0.0.1:5500/source/2.3.jpghttp://127.0.0.1:5500/source/3.3.jpghttp://127.0.0.1:5500/source/4.3.jpghttp://127.0.0.1:5500/source/5.3.jpg'
+        const win_2 = 'http://127.0.0.1:5500/source/1.2.jpghttp://127.0.0.1:5500/source/2.2.jpghttp://127.0.0.1:5500/source/3.2.jpghttp://127.0.0.1:5500/source/4.2.jpghttp://127.0.0.1:5500/source/5.2.jpg'
+        const win_3 = 'http://127.0.0.1:5500/source/1.1.jpghttp://127.0.0.1:5500/source/2.1.jpghttp://127.0.0.1:5500/source/3.1.jpghttp://127.0.0.1:5500/source/4.1.jpghttp://127.0.0.1:5500/source/5.1.jpg'
+
+        function clickimg(row) {
+            let a = Math.ceil(Math.random() * 3);
+            let b = `${row}.${a}.jpg`;
+            document.getElementById(`img_${row}`).src = `source/${b}`;
+           
+            let checked = document.getElementById('img_1').src + 
+                document.getElementById('img_2').src + 
+                document.getElementById('img_3').src +
+                document.getElementById('img_4').src +
+                document.getElementById('img_5').src ;
+            
+
+            if ( checked == win_1 || checked == win_2 || checked == win_3 ) {
+                document.getElementById('img_1').classList.add('win') ;
+                document.getElementById('img_2').classList.add('win') ;
+                document.getElementById('img_3').classList.add('win') ;
+                document.getElementById('img_4').classList.add('win') ;
+                document.getElementById('img_5').classList.add('win') ;
+            }
+            else {
+                document.getElementById('img_1').classList.remove('win') ;
+                document.getElementById('img_2').classList.remove('win') ;
+                document.getElementById('img_3').classList.remove('win') ;
+                document.getElementById('img_4').classList.remove('win') ;
+                document.getElementById('img_5').classList.remove('win') ;
+
+            }
+
+        }
+    </script>
+</body>
+</html>
