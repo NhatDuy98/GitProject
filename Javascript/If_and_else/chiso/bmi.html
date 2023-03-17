@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+    <div>
+        <p>
+            <h1>Tính chỉ số cân nặng</h1>
+        </p>
+    </div>
+    <div>
+        <label for="">
+            <p>
+                Nhập cân nặng: (kg)
+                <input id="weight" type="number">
+            </p>
+        </label>
+    </div>
+    <div>
+        <label for="">
+            <p>
+                Nhập chiều cao: (m)
+                <input id="height" type="number">
+            </p>
+        </label> 
+        <label for="">
+            <button onclick=check()>Kiểm tra</button>
+        </label>
+    </div> <br>
+    <div id="amount"></div>
+
+    <script>
+        function check() {
+            let a = Number(document.getElementById('weight').value);
+            let b = Number(document.getElementById('height').value);
+            let c = a / ( b * b )
+            let result = '';
+
+            if ( c < 0 ) {
+                result = 'Vui lòng nhập lại chỉ số của bạn.';
+            }
+            else if ( c < 18.5 ) {
+                result = 'Hơi gầy nha';
+            }
+            else if ( c < 25 ) {
+                result = 'Ăn thêm đi cho mập';
+            }
+            else if ( c < 30 ) {
+                result = 'Mập zừa thôi';
+            }
+            else {
+                result = 'Stop được rồi :)';
+            }
+            document.getElementById('amount').innerHTML = result ;
+        
+        }
+    </script>
+</body>
+</html>
