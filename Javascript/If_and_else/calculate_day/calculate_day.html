@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính số ngày trong 1 tháng</title>
+</head>
+<body>
+    <div>
+        <label for="">
+            <p>
+                <input id="month" type="number">
+                <button onclick=checked()>Check</button>
+            </p>
+        </label>
+    </div>
+    <div>
+        <p id="amount">Đây là chỗ hiển thị kết quả.</p>
+    </div>
+
+    <script>
+        // function checked() {
+        //     let a = Number(document.getElementById('month').value);
+        //     let result = '';
+
+        //     switch (a) {
+        //         case 1:
+        //             result = 'Tháng 1 có 31 ngày.'
+        //             break;
+        //         case 2:
+        //             result = 'Tháng 2 có 28 ngày hoặc 29 ngày.'
+        //             break;
+        //         case 3:
+        //             result = 'Tháng 3 có 31 ngày.'
+        //             break;
+        //         case 4:
+        //             result = 'Tháng 4 có 30 ngày.'
+        //             break;
+        //         case 5:
+        //             result = 'Tháng 5 có 31 ngày.'
+        //             break;
+        //         case 6:
+        //             result = 'Tháng 6 có 30 ngày.'
+        //             break;
+        //         case 7:
+        //             result = 'Tháng 7 có 31 ngày.'
+        //             break;
+        //         case 8:
+        //             result = 'Tháng 8 có 31 ngày.'
+        //             break;
+        //         case 9:
+        //             result = 'Tháng 9 có 30 ngày.'
+        //             break;
+        //         case 10:
+        //             result = 'Tháng 10 có 31 ngày.'
+        //             break;
+        //         case 11:
+        //             result = 'Tháng 11 có 30 ngày.'
+        //             break;
+        //         case 12:
+        //             result = 'Tháng 12 có 31 ngày.'
+        //             break;
+            
+        //         default:
+        //             result = ' Vui lòng nhập lại. Đừng bà lơn.'
+        //             break;
+        //     }
+        //     document.getElementById('amount').innerHTML = result;
+        // }
+
+        function checked() {
+            let a = Number(document.getElementById('month').value) ;
+            let result = `${ a == 1 ? 'Tháng 1 có 31 ngày' :
+                            a == 2 ? 'Tháng 2 có 28 hoặc 29 ngày' :
+                            a == 3 ? 'Tháng 3 có 31 ngày' : 
+                            a == 4 ? 'Tháng 3 có 30 ngày' : 
+                            a == 5 ? 'Tháng 5 có 31 ngày' : 
+                        'Vui lòng nhập lại'}` ;
+            document.getElementById('amount').innerHTML = result;
+
+
+        }
+    </script>
+</body>
+</html>
