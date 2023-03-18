@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img id="imgball" style="width: 200px; height: 200px;" src="source/Football_(soccer_ball).svg" alt="ball">
+    </div>
+    <div>
+        <p>Click button below to move the image to right</p>
+    </div>
+    <div>
+        <button onclick=clickme() id='clcme'>Click Me</button>
+    </div>
+
+    <script>
+        let img = null ;
+        img = document.getElementById('imgball');
+
+        function ball() {
+            let img = document.getElementById('imgball');
+            img.style.position = 'absolute';
+            img.style.right = '500px';
+            
+        }
+
+        function clickme() {
+            img.style.right = parseInt(img.style.right) + 50 + 'px';
+        }
+        window.onload = ball ;
+    </script>        
+</body>
+</html>
