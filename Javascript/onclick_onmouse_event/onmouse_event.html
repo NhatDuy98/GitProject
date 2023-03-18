@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do excercise on mouse event</title>
+</head>
+<body onload=ready()>
+    <div>
+        <img onkeydown=move()  id="img" src="source/nobita.png" style="position: absolute; left:0 ; top: 0" alt="nobita">
+    </div>
+
+    <script>
+        
+
+        
+
+        function ready() {
+            function up() {
+                let img = document.getElementById('img');
+                img.style.top = parseInt(img.style.top) + -5 + 'px';
+            }
+            function down() {
+                let img = document.getElementById('img');
+                img.style.top = parseInt(img.style.top) + 5 + 'px';
+            }
+            function left() {
+                let img = document.getElementById('img');
+                img.style.left = parseInt(img.style.left) + -5 + 'px';
+            }
+            function right() {
+                let img = document.getElementById('img');
+                img.style.left = parseInt(img.style.left) + 5 + 'px';
+            }
+
+            function move(evt) {
+            switch (evt.keyCode) {
+                case 38:
+                    up();
+                    break;
+                case 40:
+                    down();
+                    break;
+                case 37:
+                    left();
+                    break;
+                case 39:
+                    right();
+                    break;
+            
+                default:
+                    break;
+                }
+                
+            }
+            
+           
+        }
+        window.onload = ready;
+        
+
+        // function move(evt) {
+        //     switch (evt.keyCode) {
+        //         case 38:
+        //             up();
+        //             break;
+        //         case 40:
+        //             down();
+        //             break;
+        //         case 37:
+        //             left();
+        //             break;
+        //         case 39:
+        //             right();
+        //             break;
+            
+        //         default:
+        //             break;
+        //     }
+        //     window.onload = ready() ;
+        // }
+        
+        
+
+
+        // function up() {
+        //     let img = document.getElementById('img');
+        //     img.style.top = parseInt(img.style.top) + -5 + 'px';
+        // }
+        // function down() {
+        //     let img = document.getElementById('img');
+        //     img.style.top = parseInt(img.style.top) + 5 + 'px';
+        // }
+        // function left() {
+        //     let img = document.getElementById('img');
+        //     img.style.left = parseInt(img.style.left) + -5 + 'px';
+        // }
+        // function right() {
+        //     let img = document.getElementById('img');
+        //     img.style.left = parseInt(img.style.left) + 5 + 'px';
+        // }
+
+        // function move(evt) {
+        //     switch (evt.keyCode) {
+        //         case 37:
+        //             left();
+        //             break;
+        //         case 39:
+        //             right();
+        //             break;
+        //         case 38:
+        //             up();
+        //             break;
+        //         case 40:
+        //             down();
+        //             break;
+            
+        //         default:
+        //             break;
+        //     }
+        // }
+
+        // function doKey() {
+        //     window.addEventListener('keydown', move)
+        // }
+    </script>
+</body>
+</html>
