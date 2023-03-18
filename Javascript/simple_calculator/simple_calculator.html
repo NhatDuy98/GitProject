@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        form>fieldset {
+            width: 200px;
+        }
+        form>fieldset>div {
+            width: 100%;
+        }
+        form>fieldset>div>input {
+            width: 100%;
+        }
+        form>fieldset>table {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <div>
+                <input type="number">
+            </div>
+            
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td onclick=check() class="sign">%</td>
+                        <td onclick=check() class="sign">AC</td>
+                    </tr>
+                    <tr>
+                        <td onclick=check() class="numb">7</td>
+                        <td onclick=check() class="numb">8</td>
+                        <td onclick=check() class="numb">9</td>
+                        <td onclick=check() class="sign">÷</td>
+                    </tr>
+                    <tr>
+                        <td onclick=check() class="numb">4</td>
+                        <td onclick=check() class="numb">5</td>
+                        <td onclick=check() class="numb">6</td>
+                        <td onclick=check() class="sign">X</td>
+                    </tr>
+                    <tr>
+                        <td onclick=check() class="numb">1</td>
+                        <td onclick=check() class="numb">2</td>
+                        <td onclick=check() class="numb">3</td>
+                        <td onclick=check() class="sign">-</td>
+                    </tr>
+                    <tr>
+                        <td onclick=check() class="numb">0</td>
+                        <td onclick=check() class="numb">.</td>
+                        <td onclick=check() id="result">=</td>
+                        <td onclick=check() class="sign">+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
