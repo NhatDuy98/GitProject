@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng máy tính đơn giản</title>
+</head>
+<body>
+    <div>
+        <h2>Calculator</h2>
+    </div>
+    <div>
+        <input style="width: 85px;" type="number" id="st1">
+        <input style="width: 85px;" type="number" id="st2">
+    </div>
+    <div>
+        <button onclick=check1() id="pl">Cộng</button>
+        <button onclick=check2() id="tr">Trừ</button>
+        <button onclick=check3() id="nh">Nhân</button>
+        <button onclick=check4() id="ch">Chia</button>
+    </div>
+    <div>
+        <p>
+            <h3>Result:</h3>
+            <h3 id="result"></h3>
+        </p>
+    </div>
+
+    <script>
+        
+        function check1() {
+            let a = Number(document.getElementById('st1').value);
+            let b = Number(document.getElementById('st2').value);
+            let plus = a + b ;
+            result = document.getElementById('result').innerHTML = plus; 
+        }
+        function check2() {
+            let a = Number(document.getElementById('st1').value);
+            let b = Number(document.getElementById('st2').value);
+            let minus = a - b ;
+            result = document.getElementById('result').innerHTML = minus; 
+        }
+        function check3() {
+            let a = Number(document.getElementById('st1').value);
+            let b = Number(document.getElementById('st2').value);
+            let multiphy = a * b ;
+            result = document.getElementById('result').innerHTML = multiphy; 
+        }
+        function check4() {
+            let a = Number(document.getElementById('st1').value);
+            let b = Number(document.getElementById('st2').value);
+            let division = a / b ;
+            result = document.getElementById('result').innerHTML = division; 
+        }
+    </script>
+</body>
+</html>
