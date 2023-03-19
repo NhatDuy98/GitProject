@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check 3 numbers</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>Nhập 3 số a-b-c: </b> 
+        </p>
+        <input id="numb_a" placeholder="Số a" type="number"> <br>
+        <input id='numb_b' placeholder="Số b" type="number"> <br>
+        <input id='numb_c' placeholder="Số c" type="number"> <br>
+        <p id="result"></p>
+    </div>
+    <div>
+        <button onclick=checked()>Check</button>
+    </div>
+
+    <script>
+        function checked() {
+            let a = parseInt(document.getElementById('numb_a').value);
+            let b = parseInt(document.getElementById('numb_b').value);
+            let c = parseInt(document.getElementById('numb_c').value);
+
+            if ( a > b ) {
+                if ( a > c ) {
+                    result = a + ' là số lớn nhất';
+                }
+                else {
+                    result = c + ' là số lớn nhất';
+                }
+            }
+            else {
+                if ( b > c ) {
+                    result = b + ' là số lớn nhất';
+                }
+                else {
+                    result = c + ' là số lớn nhất';
+                }
+
+            }
+            document.getElementById('result').innerHTML = result ;
+            
+            
+        }
+    </script>
+</body>
+</html>

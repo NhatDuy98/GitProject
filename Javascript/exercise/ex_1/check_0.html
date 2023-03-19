@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số nguyên lớn hơn or nhỏ hơn 0</title>
+</head>
+<body>
+    <div>
+        <b>Nhập số cần kiểm tra: </b>
+        <input id="numb" placeholder="Nhập số tại đây" type="number">
+        <button onclick=checked()>Check</button>
+    </div>
+    <div>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function checked() {
+            let a = parseInt(Number(document.getElementById('numb').value));
+            
+            result = (`${ a > 0 ? a + ' lớn hơn 0 ' : a + ' nhỏ hơn 0'}`)
+            document.getElementById('result').innerHTML = result ;
+        }
+    </script>
+</body>
+</html>

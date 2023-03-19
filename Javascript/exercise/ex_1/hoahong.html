@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoa hồng nhận được dựa theo doanh số bán hàng</title>
+</head>
+<body>
+    <div>
+        <p>
+            <b>Nhập doanh số bán hàng: </b>
+        </p>
+        <input id="numb" placeholder="Doanh số bán hàng" type="number">
+        <button onclick="checked()">Check</button>
+    </div>
+    <div>
+        <h2>Result: </h2>
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        function checked() {
+            let a = Number(document.getElementById('numb').value);
+
+            switch (true) {
+                case a <= 4000000:
+                    result = 'Chưa đạt chỉ tiêu được thưởng'
+                    break;
+                case a <= 6000000:
+                    result = 'Hoa hồng nhận được là: ' + a * (1/100);
+                    break;
+                case a <= 8000000:
+                    result = 'Hoa hồng nhận được là: ' + a * (1.5/100);
+                    break;
+            
+                default:
+                    result = 'Hoa hồng nhận được là: ' + a * (2/100) + ' Hoa hồng được thưởng thêm là: ' + a * (3/100);
+
+                    break;
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

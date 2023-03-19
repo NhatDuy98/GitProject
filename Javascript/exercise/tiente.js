@@ -3,7 +3,7 @@ function handleClick() {
     let a = document.getElementById('amount').value;
     let from = document.getElementById('from').value;
     let to = document.getElementById('to').value;
-    let result;
+    let result = '';
     
     if(from == 'VND' && to == 'USD') {
         result = 'Result: ' + (a*23000) + 'VND';

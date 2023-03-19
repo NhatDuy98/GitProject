@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A & B</title>
+</head>
+<body>
+    <div>
+        <input id="numb_a" placeholder="Nhập số a" type="number">
+        <input id="numb_b" placeholder="Nhập số b" type="number"> 
+    </div>
+    <div>
+        <button onclick=checked()>Check</button>
+    </div>
+    <div>
+        <h1 id="result">Result</h1>
+    </div>
+
+    <script>
+        function checked () {
+            let a = Number(document.getElementById('numb_a').value);
+            let b = Number(document.getElementById('numb_b').value);
+            let c = a % b ;
+            let result = '';
+            
+            if ( c == 0) {
+                result = a + ' chia hết cho ' + b ;
+            }
+            else {
+                result = a + ' không chia hết cho ' + b;
+            }
+            document.getElementById('result').innerHTML = result;
+
+        }
+    </script>
+</body>
+</html>
