@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mét -> Feet</title>
+</head>
+<body>
+    <div>
+        <p>
+            <input id="mt" placeholder="Nhập số mét" type="number">
+            <button onclick="checked()">Check</button>
+        </p>
+    </div>
+    <div>
+        <h3 id="result"></h3>
+    </div>
+
+    <div>
+        <p>
+            <input id="square" placeholder="Nhập cạnh hình vuông" type="number">
+            <button onclick="check()">Submit</button>
+        </p>
+    </div>
+    <div>
+        <h3 id="kq"></h3>
+    </div>
+
+    <div>
+        <p>
+            <input id="rectangle_1" placeholder="Nhập cạnh a" type="number">
+            <button onclick="up()">Up</button><br>
+            <input id="rectangle_2" placeholder="Nhập cạnh b" type="number">
+        </p>
+    </div>
+    <div>
+        <h3 id="hcn"></h3>
+    </div>
+
+    <div>
+        <p>
+            <input id="square_triangle_1" placeholder="Nhập cạnh a" type="number">
+            <button onclick="boom()">Boom</button><br>
+            <input id="square_triangle_2" placeholder="Nhập cạnh b" type="number">
+        </p>
+    </div>
+    <div>
+        <h3 id="tgv"></h3>
+    </div>
+
+    <script>
+        function checked() {
+            let a = Number(document.getElementById('mt').value);
+            b = a * 3.2808 ;
+
+            document.getElementById('result').innerHTML = b ;
+        }
+
+        function check() {
+            let c = Number(document.getElementById('square').value);
+            d = ' Diện tích hình vuông là: ' + c * c;
+            document.getElementById('kq').innerHTML = d ;
+        }
+
+        function up() {
+            let e = Number(document.getElementById('rectangle_1').value);
+            let f = Number(document.getElementById('rectangle_2').value);
+            g = 'Diện tích hình chữ nhật là: ' +  e * f ;
+            document.getElementById('hcn').innerHTML = g ;
+        }
+
+        function boom() {
+            let h = Number(document.getElementById('square_triangle_1').value);
+            let i = Number(document.getElementById('square_triangle_2').value);
+            k = 'Diện tích tam giác vuông là: ' + 0.5 * h * i;
+            document.getElementById('tgv').innerHTML = k;
+        }
+    </script>
+</body>
+</html>

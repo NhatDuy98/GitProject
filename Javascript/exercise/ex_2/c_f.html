@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển từ độ C -> F</title>
+</head>
+<body>
+    <div>
+        <p>
+            <input id="numb_c" placeholder="Nhập độ C" type="number">
+            <button onclick="checked()">Check</button>
+        </p>
+    </div>
+    <div>
+        <p>
+            <input id="numb_f" placeholder="Nhập độ F" type="number">
+        </p>
+    </div>
+
+    <script>
+        function checked() {
+            let a = Number(document.getElementById('numb_c').value);
+            
+
+            
+            d = (a - 32) / ( 9 / 5 );
+
+            
+            document.getElementById('numb_f').value = d  ;
+
+        }
+    </script>
+</body>
+</html>
