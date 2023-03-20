@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numb = Number(prompt('Nhập N số nguyên tố: ', ''))
+        let count = 0;
+
+        let n = 2 ;
+        if ( n > Math.sqrt(numb)) {
+            do {
+                count += n ;
+                document.write(count);
+                document.write('<br>');
+                n++ ;
+            } while (n <= numb );
+        }
+        else {
+            document.write('Vui lòng nhập lại.')
+        }
+
+        // do {
+        //     n = 2 ;
+        //     if ( n > Math.sqrt(numb)) {
+        //         document.write(count);
+        //     }
+        //     else {
+        //         n += 1;
+        //     }
+
+        // } while ( n <= numb );
+        // document.write(count);
+
+        // for ( n = 2 ; n <= numb ; n++) {
+        //     count += n ;
+        //     document.write(count)
+        //     document.write('<br>');
+        // }
+    </script>
+</body>
+</html>
