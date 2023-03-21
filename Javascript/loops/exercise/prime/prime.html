@@ -8,21 +8,50 @@
 </head>
 <body>
     <script>
-        let numb = Number(prompt('Nhập N số nguyên tố: ', ''))
+        let numb = Number(prompt('Nhập số lượng số nguyên tố cần kiểm tra: ', ''))
         let count = 0;
 
-        let n = 2 ;
-        if ( n > Math.sqrt(numb)) {
-            do {
-                count += n ;
-                document.write(count);
-                document.write('<br>');
-                n++ ;
-            } while (n <= numb );
+        let N = 2 ;
+        let result = true ;
+        while (count < numb) {
+            let result = true ;
+            for ( let divisor = 2 ; divisor < N ; divisor++) {
+                if ( N % divisor == 0) {
+                    result = false ;
+                    break ;
+                }
+            }
+            if ( result == true ) {
+                    count++ ;       
+                    document.write(N + ' là số nguyên tố.' +('<br>'));
+                }
+            N++ ;
         }
-        else {
-            document.write('Vui lòng nhập lại.')
-        }
+            // if ( N % 2 == 0 || N % 3 == 0 ) {
+            //     result = false ;
+            //     break ;
+            // }
+            // if ( N % 2 != 0 || N % 3 != 0 ) {
+            //     result = true ;
+            //     count++ ;
+            //     document.write(count);
+            // }
+            // N++ ;
+        
+        
+
+        // let n = 2 ;
+        // if ( n > Math.sqrt(numb)) {
+        //     do {
+        //         count += n ;
+        //         document.write(count);
+        //         document.write('<br>');
+        //         n++ ;
+        //     } while (n <= numb );
+        // }
+        // else {
+        //     document.write('Vui lòng nhập lại.')
+        // }
 
         // do {
         //     n = 2 ;
