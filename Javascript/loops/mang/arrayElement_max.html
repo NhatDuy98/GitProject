@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm giá trị lớn nhất trong mảng</title>
+</head>
+
+<body>
+    <p id="result"></p>
+    <script>
+        // let capacity = Number(prompt('Nhập số lượng mảng: ', ''));
+        let numbs = new Array(1341,12341234,1234,1234,12342543,15414,1452354,125);
+        let max = numbs[0];
+        let index = 0 ;
+        
+        for (let i = 0; i < numbs.length; i++) {
+            if (max < numbs[i]) {
+                max = numbs[i];
+                index += i ;
+            }
+        }
+        document.write('Biến lớn nhất là: ' + max + ' Và ở vị trí thứ: ' + index);
+
+
+        // for (let j = 0; j < numbs.length; j++) {
+        //     numbs[j] = Math.ceil(Math.random() * 1000);
+        //     max = numbs[j];
+        // }
+        // console.log(numbs);
+
+
+    </script>
+</body>
+
+</html>
