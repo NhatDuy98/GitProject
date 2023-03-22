@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo và thao tác với mảng</title>
+</head>
+
+<body>
+    <b>Sample Screen:</b> <br>
+
+    <input placeholder="Nhập" id="numb" type="text">
+    <button onclick="add()">Add</button>
+    <button onclick="display()">Display</button>
+    <hr>
+    <p id="result"></p>
+
+    <script>
+        let numbs = new Array();
+        let count = 0;
+        let numb = (document.getElementById('numb').value);
+        function add() {
+            let numb = (document.getElementById('numb').value);
+            numbs[count] = numb;
+            count++;
+            // numb = '';
+            console.log(numbs);
+        }
+
+        function display() {
+            let e = "";
+            for ( let i = 0 ; i < numbs.length ; i++) {
+                e += 'Element ' + i + ' = ' + numbs[i] + '<br>' ;
+            }
+            document.getElementById('result').innerHTML = e ;
+        }
+
+            
+
+            // document.getElementById('result').innerHTML = (`${'Element '} ${i} ${' = '} ${numb}`); 
+
+    </script>
+</body>
+
+</html>

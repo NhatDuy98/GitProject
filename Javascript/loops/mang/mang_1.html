@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let numbs = [];
+        let min = Number(prompt('Nhập số min: ', ''));
+        // let max = Number(prompt('Nhập số max: ', ''));
+        let max = '' ;
+
+        do {
+            max = Number(prompt('Nhập số max: ', ''));
+
+        } while ( min > max );
+        let capacity = Number(prompt('Nhập số lượng phần tử: ', ''));
+        let numbs = new Array(capacity);
+        
+        for ( i = 0 ; i < numbs.length ; i++) {
+            // let min = 73;
+            // let max = 23;
+            numbs[i] = Math.ceil(Math.random() * ( max - min ) + min);
+            // numbs[i] = Number(prompt('Nhập số:' + i));
+            // numb += i ;
+            // numbs.push(numb);
+            
+        }
+        numbs.unshift(11);
+        numbs.push(0);
+        numbs.sort();
+        numbs.reverse();
+        console.log(numbs);
+        // let numb = Number(prompt('Nhập số:',''));
+        // numbs.push(numb);
+        // console.log(numbs);
+        
+    </script>
+</body>
+</html>

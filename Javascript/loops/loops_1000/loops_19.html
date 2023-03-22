@@ -8,7 +8,17 @@
 </head>
 <body>
     <script>
-        let 
+        let numb_x = Number(prompt('Nhập số nguyên X cần kiểm tra: ', ''));
+        let numb_n = Number(prompt('Nhập biến n: ',''));
+        let count = 1 ;
+        let total = 1 + numb_x ;
+
+        for ( i = 1 ; i <= numb_n ; i++) {
+            multi =  2 * i  ;
+            count *= (( 2 * i ) + 1 ) * multi ;
+            total += Math.pow( numb_x , (( 2 * i ) + 1 )) / count ;
+        }
+        alert(total);
     </script>
 </body>
 </html>

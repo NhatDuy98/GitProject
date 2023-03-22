@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let min = Number(prompt('Nhập min: ', ''));
+        // let max = Number(prompt('Nhập max: ', '')); -->> nhập min,max từ bàn phím và các giá trị trong mảng đc sinh ngẫu nhiên từ min->max
+        let size = Number(prompt('Nhập số lượng phần tử mảng: ', ''));
+        let capacity= new Array (size);
+        let min = Number(prompt('Nhập min: ',''));
+        let max ;
+        do {
+            max = Number(prompt('Nhập max: '));
+        } while ( max < min);
+        
+        for ( let i = 0 ; i < capacity.length ; i++) {
+            // capacity[i] = Math.floor(Math.random() * 50 ); ->> các giá trị của mảng được sinh ngẫu nhiên từ 0-50
+            capacity[i] = Math.floor(Math.random() * (max - min + 1) + min );
+        }
+        console.log(capacity);
+         
+
+
+    </script>
+</body>
+</html>
