@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+    <p id="result"></p>
+    <hr>
+    <script>
+        let value = Number(prompt('Nhập số cần kiểm tra: ', ''));
+        let numbs = new Array(1,341,123,142,-123,123);
+        numbs.sort();
+        console.log(numbs);
+
+        for ( let i = 0 ; i < numbs.length ; i++) {
+            if ( value == numbs[i]) {
+                document.getElementById('result').innerHTML = 'Giá trị ' + numbs[i] + ' có nằm trong mảng.';
+                break;
+            }
+        }
+        if ( value != numbs[i]) {
+            alert('Không có phần tử');
+        }
+    </script>
+</body>
+</html>
