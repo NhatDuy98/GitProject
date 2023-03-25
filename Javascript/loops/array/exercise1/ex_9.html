@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nối 2 mảng a và b</title>
+</head>
+<body>
+    <script>
+        let a = new Array(10);
+        for ( i = 0 ; i < a.length ; i++) {
+            a[i] = Math.ceil(Math.random() * 50 );
+        }
+        document.write('Mảng a là: ' + a + '<br>');
+
+        let b = new Array(10);
+        for ( i = 0 ; i < a.length ; i++) {
+            b[i] = Math.ceil(Math.random() * 50 );
+        }
+        document.write('Mảng b là: ' + b + '<br>');
+
+        let c = new Array(20);
+        c = a.concat(b);
+        document.write('Mảng c là: ' + c);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng 10 phần tử và sắp xếp giảm dần</title>
+</head>
+<body>
+    <script>
+        let numbs = new Array(10);
+        for ( i = 0 ; i < numbs.length ; i++) {
+            numbs[i] = Math.ceil(Math.random() * 50 ) ;
+        }
+        document.write('Dãy số trong mảng là: ' + numbs + '<br>');
+        document.write('Dãy số mới là: ' + numbs.sort(function(a,b) {
+            return b - a ;
+        }))
+            
+    </script>
+</body>
+</html>

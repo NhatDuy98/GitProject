@@ -8,7 +8,23 @@
 </head>
 <body>
     <script>
-        
+        let numbs = new Array(10);
+        for ( let i = 0 ; i < numbs.length ; i++) {
+            numbs[i] = Math.ceil(Math.random() * 10 );
+        }
+        document.write('Các phần tử của mảng là: ' + numbs + '<br>');
+
+        let V = Number(prompt('Nhập số nguyên V: ',''));
+        let size = new Array();
+        for ( let j = 0 ; j < numbs.length ; j++) {
+            if ( V == numbs[j]) {
+                document.write(V + ' is in array' + '<br>');
+                numbs.splice(j , 1 );
+                numbs.push(0);
+                document.write('Mảng mới là: ' +numbs);
+                document.write('<br>')
+            }
+        }
     </script>
 </body>
 </html>
