@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập mảng số nguyên và đảo ngược các phần tử trong mảng</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt('Nhập số lượng mảng: ', ''));
+        let numbs = new Array(number);
+
+        for ( let i = 0 ; i < numbs.length ; i++) {
+            numbs[i] = Math.ceil(Math.random() * 50 );
+        }
+        document.write('Dãy số trong mảng là: ' + numbs + '<br>');
+        document.write('Dãy số đảo ngược là: ' + numbs.reverse());
+    </script>
+</body>
+</html>

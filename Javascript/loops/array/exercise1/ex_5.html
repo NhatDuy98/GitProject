@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm số nguyên âm trong 1 chuỗi</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt('Nhập số lượng số trong mảng: ',''));
+        let numbs = new Array(number);
+        let min = Number(prompt('Nhập số nguyên âm: ',''))
+        let max = Number(prompt('Nhập số nguyên dương: ',''))
+        for ( let i = 0 ; i < numbs.length ; i++) {
+            numbs[i] = Math.ceil(Math.random() * (max - min) + min);
+        }
+        document.write('Dãy số là: ' + numbs + '<br>');
+        let negativeInt = new Array();
+        let total = 0 ;
+        for ( let j = 0 ; j < numbs.length ; j++) {
+            if ( numbs[j] < 0) {
+                total++ ;
+                negativeInt.push(numbs[j]); 
+            }
+        }
+        document.write('Các số nguyên âm là: ' + negativeInt + '<br>');
+        document.write('Tổng số lượng các số nguyên âm là: ' + total);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiếm tra mảng số nguyên V</title>
+</head>
+<body>
+    <script>
+        let numbs = new Array(10);
+        for ( let i = 0 ; i < numbs.length ; i++) {
+            numbs[i] = Math.ceil(Math.random() * 50 );
+        }
+        document.write('Mảng số nguyên: ' + numbs + '<br>');
+        
+        let V = Number(prompt('Nhập số nguyên dương V: ',''));
+        for ( j = 0 ; j < numbs.length ; j++) {
+            if ( V == numbs[j]) {
+                document.write(V + ' is in the array');
+                break;
+            }
+            else {
+                document.write(V + ' is not in the array');
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

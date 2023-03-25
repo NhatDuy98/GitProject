@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm giá trị lớn nhất và hiện Average của mảng</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt('Nhập số lượng số nguyên: ',''));
+        let numbs = new Array(number);
+        let total = 0;
+
+        for ( let i = 0 ; i < numbs.length ; i++) {
+            numbs[i] = Math.ceil(Math.random() * 50 );
+            console.log(numbs);
+            total += numbs[i] ;
+        }
+        let average = total / numbs.length;
+        let max = numbs[0];
+
+        for ( j = 0 ; j < numbs.length ; j++) {
+            if ( numbs[j] > max) {
+                max = numbs[j];
+
+            }
+        }
+        document.write('Số lớn nhất là: ' + max +'<br>');
+        document.write('Gía trị trung bình là: ' + average);
+
+    </script>
+</body>
+</html>
