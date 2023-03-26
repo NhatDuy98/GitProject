@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1 = prompt('Nhập chuỗi 1: ','');
+        let arr_1 = new Array(arr1.split(''));
+        document.write(arr1 + '<br>');
+        console.log(arr_1);
+
+        let arr2 = prompt('Nhập chuỗi 2: ','');
+        let arr_2 = new Array(arr1.split(''));
+        document.write(arr2 + '<br>');
+        console.log(arr_2);
+
+        for ( let i in arr_1) {
+            if ( arr_1.indexOf[i] === arr_2.indexOf[i]) {
+                document.write(' giống nhau');
+            }
+            else {
+                document.write('Liar');
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

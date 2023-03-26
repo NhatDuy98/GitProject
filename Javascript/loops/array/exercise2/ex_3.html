@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm số kí tự số trong mảng</title>
+</head>
+
+<body>
+    <script>
+        let name = 'NhatDuy09051998';
+        let arrName = new Array(name.split(''));
+        // let name = new Array('Nhatduy', 0, 9, 0, 5, 9, 8)
+        document.write(arrName + '<br>');
+        console.log(arrName);
+
+        let total = 0 ;
+
+        for (i = 0; i < arrName.length; i++) {
+            if (arrName[i].toNumber() === Number) {
+                total += i;
+            }
+        }
+        document.write('Số lượng kí tự số trong mảng là: ' + total.length);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+
+<body>
+    <script>
+        let array_1 = new Array();
+        for (i = 0; i < 5; i++) {
+            array_1[i] = new Array();
+            for (j = 0; j < 7; j++) {
+                array_1[i][j] = Math.ceil(Math.random() * 50);
+            }
+        }
+        console.log(array_1);
+        
+        for (let i in array_1) {
+            document.write('Row ' + i + '<br>');
+            for (let j in array_1[i]) {
+                document.write('' + array_1[i][j] + '<br>');
+            }
+        }
+    </script>
+</body>
+
+</html>
