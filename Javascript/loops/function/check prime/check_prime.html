@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Prime</title>
+</head>
+<body>
+    <script>
+        function isPrime(number) {
+            let count = 2 ;
+            while ( 0 < number < 10000) {
+                if ( number % 2 == 0 || number % 3 == 0 ) {
+                    return alert (number + ' không là số nguyên tố.');
+                }
+                else {
+                    return alert (number + ' là số nguyên tố.');
+                }
+            }
+            
+            // if ( number == 0 && number == 1 ) {
+            //     return alert ( number + ' không là số nguyên tố.');
+            // }
+            // else if ( number == 2 && number == 3) {
+            //     return alert( number + ' là số nguyên tố.');
+            // }
+            // else if ( number % count == 0 ) {
+            //     return alert(number + ' không là số nguyên tố.');
+            // }
+            // else {
+            //     return alert(number + ' là số nguyên tố.')
+            // }
+            // count++ ;
+            
+
+            // if ( number <= 0 || number >=10000) {
+            //     return alert('Vui lòng nhập lại.');
+            // }
+            // else if ( number % 2 == 0 || number % 3 == 0 ) {
+            //     return alert(number + ' không là số nguyên tố.');
+            // }
+            // else {
+            //     return alert(number + ' là số nguyên tố.');
+            // }
+        }
+
+        let number = parseInt(prompt('Nhập số nguyên dương: ',''));
+        let result = isPrime(number);
+    </script>
+</body>
+</html>
