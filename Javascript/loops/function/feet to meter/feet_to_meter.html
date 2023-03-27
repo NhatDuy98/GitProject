@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feet to Meters</title>
+</head>
+<body>
+    <h1>Feet to Meters</h1>
+    <hr>
+    <p id="result_m"></p>
+    <p id="result_f"></p>
+    <script>
+        function footToMeter(foot) {
+            return 0.305 * foot;
+        }
+        function meterToFoot(meter) {
+            return 3.279 * meter;
+        }
+
+        let numb_m = prompt('Nhập số mét: ','');
+        document.getElementById('result_m').innerHTML = numb_m + ' meter' + ' = ' + meterToFoot(numb_m) + ' foot';
+        let numb_f = prompt('Nhập số foot: ','');
+        document.getElementById('result_f').innerHTML = numb_f + ' foot' + ' = ' + footToMeter(numb_f) + ' meter';
+
+    </script>
+</body>
+</html>

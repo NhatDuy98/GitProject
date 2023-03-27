@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the Smallest Value</title>
 </head>
+
 <body>
     <h1>Find the Smallest Value</h1>
     <hr>
@@ -16,31 +18,58 @@
     <input id="arrNumber" placeholder="Input the arr" type="text">
     <button onclick="checkMin()">Submit</button>
     <p id="result"></p>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
     <script>
         function findMin(arr) {
             let min = arr[0];
             let total = '';
-            for ( i = 1 ; i < arr.length ; i++) {
-                if ( min > arr[i]) {
-                    min = arr[i]; 
+            for (i = 1; i < arr.length; i++) {
+                if (min > arr[i]) {
+                    min = arr[i];
                 }
-            } 
-            return min ;
+            }
+            return min;
         }
+            
+        
+        
+        
+        
         function checkMin() {
-            let arr1 = document.getElementById('result').value;
-            arr1 = new Array(3, 5, 1, 8, -3, 7, 8); 
-            document.getElementById('result').innerHTML = findMin(arr1);
-            let arr2 = document.getElementById('result').value;
-            arr2 = new Array(7, 12, 6, 9, 20, 56, 89); 
-            document.getElementById('result').innerHTML = findMin(arr2);
-            // let arr3 = document.getElementById('result').value;
-            // arr3 = new Array(3, 5, 1, 8, -3, 7, 8); 
-            // document.getElementById('result').innerHTML = findMin(arr3);
-            // let arr4 = document.getElementById('result').value;
-            // arr4 = new Array(3, 5, 1, 8, -3, 7, 8); 
-            // document.getElementById('result').innerHTML = findMin(arr4);
+            let arr1 = new Array(3, 5, 1, 8, -3, 7, 8);
+            arr1.join('');
+            console.log(arr1);
+            let arr2 = new Array(7, 12, 6, 9, 20, 56, 89);
+            let arr3 = new Array();
+            let arr4 = new Array(-1, 0, 0, 0, 0, 0);
+            let arr = document.getElementById('arrNumber').value;
+            let result = `${ arr ==  arr1 ? findMin(arr1) :
+                // arr == arr2 ? findMin(arr2) : 
+                // arr == arr3 ? findMin(arr3) :
+                findMin(arr4)}`;
+            document.getElementById('result').innerHTML = result ;
         }
-    </script>
+                
+            // if ( arr == arr1 ) {
+            //     document.getElementById('result').innerHTML = findMin(arr1);
+                
+            // }
+
+
+
+
+
+        //let arr2 = document.getElementById('arrNumber').value;
+        //document.getElementById('result1').innerHTML = findMin(arr);
+        
+        //let arr3 = document.getElementById('arrNumber').value;
+        //document.getElementById('result2').innerHTML = findMin(arr3);
+        
+        //let arr4 = document.getElementById('arrNumber').value;
+        // //document.getElementById('result3').innerHTML = findMin(arr4);
+        </script>
 </body>
+
 </html>
