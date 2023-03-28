@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số đầu tiên dãy fibonacci chia hết cho 5</title>
+</head>
+<body>
+    <script>
+        let numb_1 = 0 ;
+        let numb_2 = 0 ;
+        let total = 0 ;
+        let fibonacci = '' ;
+        for ( let i = 0 ; i < 20 ; i++) {
+            if ( i == 0 ) {
+                total = 1 ;
+                numb_1 = 1 ;
+                fibonacci += total + '&ensp;';
+            }
+            else {
+                numb_2 = numb_1 ;
+                numb_1 = total ;
+                total = numb_2 + numb_1 ;
+                fibonacci += total + '&ensp';
+                if ( total % 5 == 0 ) {
+                    document.write('Số đầu tiền chia hết cho 5 là ' + total);
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

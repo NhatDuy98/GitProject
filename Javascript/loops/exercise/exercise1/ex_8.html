@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đoán số</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt('Số cần đoán của bạn trong khoảng từ 1 - 50: ',''));
+        let numb = Math.ceil(Math.random() * number);
+        console.log(numb);
+        let numb_1 = Number(prompt('Nhập số bạn đoán: ',''));
+        for ( let i = 0 ; i < 3 ; i++) {
+            if ( numb_1 == numb ) {
+                alert('Ye bạn giỏi lắm.!')
+            }
+            else if ( numb_1 != numb ) {
+                alert('Đoán tiếp đi mẹ.');
+                numb_1 = Number(prompt('Nhập số bạn đoán: ',''));
+            }
+            else {
+                alert('Hết lượt rồi nha.');
+            }
+        }
+    </script>
+</body>
+</html>

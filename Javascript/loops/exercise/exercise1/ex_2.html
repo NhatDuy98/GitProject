@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhiệt độ</title>
+</head>
+<body>
+    <script>
+        let numb = Number(prompt('Nhập nhiệt độ: ',''));
+        while ( numb >= 100 || numb <= 20) {
+            if ( numb >= 100 ) {
+                alert('Too hot');
+                numb = Number(prompt('Nhập nhiệt độ: ',''));
+            }
+            else if ( numb <= 20 ){
+                alert('Too cold');
+                numb = Number(prompt('Nhập nhiệt độ: ',''));
+            }
+        }
+        alert('Mát mẻ');
+        </script>
+</body>
+</html>
