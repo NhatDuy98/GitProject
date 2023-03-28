@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numb" type="number">
+    <button onclick="check()">Check</button>
+    <hr>
+    <p id="result"></p>
+    <p id="result1"></p>
+    <script>
+        function upNumber(number) {
+            return number + 1 ;
+        }
+        function check() {
+            let numb = +document.getElementById('numb').value;
+            document.getElementById('result1').innerHTML = numb ; 
+            document.getElementById('result').innerHTML = upNumber(numb);
+        }
+    </script>
+</body>
+</html>

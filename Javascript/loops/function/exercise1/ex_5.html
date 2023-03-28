@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function findStar(value) {
+            let star = ["Polaris" , "Aldebaran" , "Deneb" , "Vega" , "Altair" , "Dubhe" , "Regulus"];
+            let constellation = ["Ursa Minor" , "Tarurus", "Cygnus" , "Lyra" , "Aquila" , "Ursa Major" , "Leo"];
+            let find = "";
+            let total = 0 ;
+            for ( let i = 0 ; i < star.length ; i++) {
+                if ( value == star[i] ) {
+                    total = i ;
+                    for ( let j = 0 ; j < constellation.length ; j++) {
+                        if ( total == j ){
+                            return find = constellation[j];
+                            
+                        }
+                        else {
+                            return "Không tìm thấy";
+                        }
+                    }
+                }
+                else {
+                    return "Không tìm thấy";
+                }
+            }
+        }
+        let find_star = prompt('Nhập sao nào: ','');
+        document.write(findStar(find_star));
+
+    </script>
+</body>
+</html>
