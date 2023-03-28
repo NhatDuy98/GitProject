@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area and Perimeter</title>
+</head>
+<body>
+    <script>
+        function mathArea(radius) {
+            return radius * 2 * 3.14;
+        }
+        function mathPerimeter(radius) {
+            return radius * radius * 3.14;
+        }
+        let numb = Number(prompt('Nhập bán kính hình tròn: ',''));
+        document.write('Bán kính hình tròn = ' + mathArea(numb).toFixed(3) + '<br>');
+        document.write('Diện tích hình tròn = ' + mathPerimeter(numb).toFixed(3));
+    </script>
+</body>
+</html>

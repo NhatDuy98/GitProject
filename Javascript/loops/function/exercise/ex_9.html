@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số lần xuất hiện của kí tự</title>
+</head>
+<body>
+    <script>
+        let arr1 = new Array('-' , '<' , '>' , '?' , '!' , '@' );
+        let character = '-' ;
+        console.log(typeof character);
+        let i = 0 ;
+        let total = 0 ;
+        while ( i < arr1.length) {
+            if ( arr1[i] == character ) {
+                total += i ;
+            }
+            i++;
+        }
+        document.write(total);
+    </script>
+</body>
+</html>

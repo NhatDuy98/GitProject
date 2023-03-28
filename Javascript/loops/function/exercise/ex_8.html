@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đảo ngược mảng số nguyên nhập vào</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt('Nhập số lượng phần tử: ',''));
+        let numbs = new Array(number);
+        for ( let i = 0 ; i < numbs.length ; i++) {
+            numbs[i] = Math.ceil(Math.random() * 50);
+        }
+        document.write('Mảng ban đầu: ' + numbs + '<br>');
+        document.write('Mảng đảo ngược:' + numbs.reverse());
+    </script>
+</body>
+</html>

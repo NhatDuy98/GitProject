@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check 3 Prime</title>
+</head>
+<body>
+    <script>
+        function checkSmallest(A , B , C) {
+            if ( A < B && A < C) {
+                if ( B < C ) {
+                    return C ;
+                }
+                else {
+                    return B ;
+                }
+            }
+            else {
+                return A ;
+            }
+        }
+
+        let numbA = Math.ceil(Math.random() * 50 );
+        document.write(numbA);
+        let numbB = Math.ceil(Math.random() * 50 );
+        document.write(numbB);
+        let numbC = Math.ceil(Math.random() * 50 );
+        document.write(numbC);
+
+        alert(checkSmallest(numbA , numbB , numbC));
+    </script>
+</body>
+</html>
